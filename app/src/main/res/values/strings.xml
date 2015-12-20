@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">MALV</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="menu">
+        <item>Home</item>
+        <item>Events</item>
+        <item>Contestants</item>
+        <item>Apply</item>
+        <item>Sponsors</item>
+        <item>About</item>
+        <item>Contact</item>
+    </string-array>
 </resources>
