@@ -40,9 +40,6 @@ public class YouTubeFragment extends Fragment {
 
             @Override
             public void onInitializationFailure(Provider provider, YouTubeInitializationResult error) {
-                // YouTube error
-                //String errorMessage = error.toString();
-                //Log.d("errorMessage:", errorMessage);
             }
         } );
 

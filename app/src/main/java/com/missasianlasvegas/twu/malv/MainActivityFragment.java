@@ -28,7 +28,7 @@ public class MainActivityFragment extends Fragment  {
     private ImageSwitcher galleryImageSwitcher;
     private ImageButton prevButton, nextButton;
 
-    private ImageButton programbookButton;
+    private ImageButton programbookButton, recapvideoButton;
 
     public MainActivityFragment() {
     }
@@ -73,11 +73,19 @@ public class MainActivityFragment extends Fragment  {
             }
         });
 
-        programbookButton= (ImageButton) v.findViewById(R.id.programbook_btn);
+        programbookButton = (ImageButton) v.findViewById(R.id.programbook_btn);
         programbookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startProgramBook();
+            }
+        });
+
+        recapvideoButton = (ImageButton) v.findViewById(R.id.recap_video_btn);
+        recapvideoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startRecapVideo();
             }
         });
 
@@ -110,14 +118,12 @@ public class MainActivityFragment extends Fragment  {
         startActivity(intent);
     }
 
-    /*
     private void startRecapVideo() {
         YouTubeFragment YoutubeFragment = new YouTubeFragment();
-        FragmentManager manager = getSupportFragmentManager();
+        FragmentManager manager = getActivity().getSupportFragmentManager();
         manager.beginTransaction()
-                .replace(R.id.fragment_main, YoutubeFragment)
+                .replace(R.id.mainContent, YoutubeFragment)
                 .addToBackStack(null)
                 .commit();
     }
-    */
 }

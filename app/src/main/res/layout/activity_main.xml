@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.missasianlasvegas.twu.malv.MainActivity">
+    tools:context="com.missasianlasvegas.twu.malv.MainActivity"
+    android:id ="@+id/drawerLayout">
 
 
     <FrameLayout
@@ -13,9 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"    >
     </FrameLayout>
+
     <ListView
-        android:id="@+id/drawerList"
-        android:background="#81BEF7"
+        android:id="@+id/menu_listview"
+        android:background="@color/colorPrimary"
         android:layout_width="200dp"
         android:divider="@null"
         android:layout_height="match_parent"
