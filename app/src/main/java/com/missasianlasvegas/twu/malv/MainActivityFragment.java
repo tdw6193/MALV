@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +14,10 @@ import android.widget.ImageButton;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher;
+
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -27,8 +31,8 @@ public class MainActivityFragment extends Fragment  {
 
     private ImageSwitcher galleryImageSwitcher;
     private ImageButton prevButton, nextButton;
-
-    private ImageButton programbookButton, recapvideoButton;
+    private ImageButton programbookButton;
+    private ImageButton facebookBtn, twitterBtn, instagramBtn, youtubeBtn;
 
     public MainActivityFragment() {
     }
@@ -81,11 +85,53 @@ public class MainActivityFragment extends Fragment  {
             }
         });
 
-        recapvideoButton = (ImageButton) v.findViewById(R.id.recap_video_btn);
-        recapvideoButton.setOnClickListener(new View.OnClickListener() {
+        YouTubePlayerSupportFragment youTubePlayerFragment = YouTubePlayerSupportFragment.newInstance();
+        youTubePlayerFragment.initialize(Config.YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
+            @Override
+            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean wasRestored) {
+                if (!wasRestored) {
+                    player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
+                    player.cueVideo("nrk2HjcuEhA");
+                    player.pause();
+                }
+            }
+
+            @Override
+            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult error) {
+            }
+        });
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        transaction.add(R.id.youtube_layout, youTubePlayerFragment).commit();
+
+        facebookBtn = (ImageButton) v.findViewById(R.id.facebook_link);
+        facebookBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startRecapVideo();
+                linkToFacebook();
+            }
+        });
+
+        twitterBtn = (ImageButton) v.findViewById(R.id.twitter_link);
+        twitterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                linkToTwitter();
+            }
+        });
+
+        instagramBtn = (ImageButton) v.findViewById(R.id.instagram_link);
+        instagramBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                linkToInstagram();
+            }
+        });
+
+        youtubeBtn = (ImageButton) v.findViewById(R.id.youtube_link);
+        youtubeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                linkToYouTube();
             }
         });
 
@@ -118,12 +164,35 @@ public class MainActivityFragment extends Fragment  {
         startActivity(intent);
     }
 
-    private void startRecapVideo() {
-        YouTubeFragment YoutubeFragment = new YouTubeFragment();
-        FragmentManager manager = getActivity().getSupportFragmentManager();
-        manager.beginTransaction()
-                .replace(R.id.mainContent, YoutubeFragment)
-                .addToBackStack(null)
-                .commit();
+    private void linkToFacebook() {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("https://www.facebook.com/MissAsianLasVegas/"));
+        startActivity(intent);
+    }
+
+    private void linkToTwitter() {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("https://twitter.com/msasianvegas"));
+        startActivity(intent);
+    }
+
+    private void linkToInstagram() {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("https://www.instagram.com/missasiannorthamerica/"));
+        startActivity(intent);
+    }
+
+    private void linkToYouTube() {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("https://www.youtube.com/channel/UCJ-YjjPMWp7phRcWN2E-cfA"));
+        startActivity(intent);
     }
 }

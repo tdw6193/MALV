@@ -4,22 +4,19 @@
     android:layout_height="match_parent"
     tools:context="com.missasianlasvegas.twu.malv.MainActivityFragment"
     tools:showIn="@layout/activity_main"
-    android:background="@mipmap/malv_bg" >
+    android:background="@mipmap/content_bg" >
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:layout_centerHorizontal="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="16dp"
+            android:padding="16dp"
             android:orientation="vertical"
-            android:id="@+id/homepage_content"
-            android:background="@mipmap/content_bg">
+            android:id="@+id/homepage_content">
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -70,16 +67,111 @@
                 android:layout_height="250dp"
                 android:id="@+id/programbook_btn"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
                 android:background="@mipmap/pagent_cover"/>
 
-            <ImageButton
+            <TextView
                 android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:id="@+id/recap_video_btn"
+                android:layout_height="wrap_content"
+                android:id="@+id/programbook_title_text"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
-                android:background="@mipmap/recap_video"/>
+                android:layout_marginTop="5dp"
+                android:text="Program Book"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/programbook_desc_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="20dp"
+                android:text="Check out the 2015 Program Book !"
+                android:textColor="#6C8585"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center_horizontal"/>
+
+            <FrameLayout
+                android:id="@+id/youtube_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/social_media_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Be sure to follow Miss Asian Las Vegas!"
+                android:textColor="#6C8585"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/social_media_links"
+                android:weightSum="5">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/facebook_link"
+                    android:background="@mipmap/facebook_icon"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/twitter_link"
+                    android:background="@mipmap/twitter_icon"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/instagram_link"
+                    android:background="@mipmap/instagram_icon"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/youtube_link"
+                    android:background="@mipmap/youtube_icon"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
 
         </LinearLayout>
 
