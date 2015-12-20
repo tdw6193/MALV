@@ -33,7 +33,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/event_info_section"
                 android:padding="15dp">
 
@@ -46,6 +46,16 @@
                     android:text="EVENT INFO"
                     android:textColor="@color/white"
                     android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <ExpandableListView
+                    android:id="@+id/events_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/event_info_text"
+                    android:padding="5dp">
+                </ExpandableListView>
 
             </RelativeLayout>
 

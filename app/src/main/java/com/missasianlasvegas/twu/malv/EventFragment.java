@@ -6,6 +6,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ExpandableListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+import customviews.EventsExpandableListViewAdapter;
+import entities.Event;
 
 /**
  * Created by tdw6193 on 12/20/2015.
@@ -13,6 +20,10 @@ import android.view.ViewGroup;
 public class EventFragment extends Fragment {
 
     private Context context;
+
+    private ExpandableListView listView;
+    private EventsExpandableListViewAdapter adapter;
+
 
     public EventFragment() {
     }
@@ -25,6 +36,90 @@ public class EventFragment extends Fragment {
 
         context = inflater.getContext();
 
+        ArrayList<Event> events = generateDummyData();
+        for(int i=0; i<events.size(); i++)
+            Toast.makeText(context, events.get(i).getName(), Toast.LENGTH_SHORT).show();
+
+        listView = (ExpandableListView) v.findViewById(R.id.events_listview);
+
+        if(!events.isEmpty()) {
+            adapter = new EventsExpandableListViewAdapter(context, events);
+            listView.setAdapter(adapter);
+            for (int i = 0; i < adapter.getGroupCount(); i++)
+                listView.expandGroup(i);
+        }
+
         return v;
+    }
+
+    private ArrayList<Event> generateDummyData () {
+        ArrayList<Event> eventList = new ArrayList<Event>();
+
+        Event [] events = new Event[9];
+
+        events[0] = new Event();
+        events[0].setName("Miss Asian North America Pageant");
+        events[0].setMonth("July, 2016");
+        events[0].setDate("");
+        events[0].setLocation("The Venetian Hotel & Casino");
+        eventList.add(events[0]);
+
+        events[1] = new Event();
+        events[1].setName("Miss Asian Las Vegas/ Miss Asian North America Pool Party");
+        events[1].setMonth("June, 2016");
+        events[1].setDate("");
+        events[1].setLocation("Location: TBD");
+        eventList.add(events[1]);
+
+        events[2] = new Event();
+        events[2].setName("Deadline To Apply For Miss Asian Las Vegas/ Miss Asian North America");
+        events[2].setMonth("May, 2016");
+        events[2].setDate("");
+        events[2].setLocation("");
+        eventList.add(events[2]);
+
+        events[3] = new Event();
+        events[3].setName("Ms./Mrs. Asian Las Vegas Pageant");
+        events[3].setMonth("December, 2015");
+        events[3].setDate("");
+        events[3].setLocation("Location: TBD");
+        eventList.add(events[3]);
+
+        events[4] = new Event();
+        events[4].setName("Ms./ Mrs. Asian Las Vegas Orientation");
+        events[4].setMonth("November, 2015");
+        events[4].setDate("Saturday November 7");
+        events[4].setLocation("Location: TBD");
+        eventList.add(events[4]);
+
+        events[5] = new Event();
+        events[5].setName("Miss Asian Las Vegas Azure Pool Party");
+        events[5].setMonth("August, 2015");
+        events[5].setDate("Saturday August 16 11:00am – 5:00pm");
+        events[5].setLocation("Azure Pool Inside The Palazzo Hotel & Casino");
+        eventList.add(events[5]);
+
+        events[6] = new Event();
+        events[6].setName("Miss Asian Las Vegas Meet & Greet Reception");
+        events[6].setMonth("August, 2015");
+        events[6].setDate("Thursday August 27");
+        events[6].setLocation("TBD – The Venetian Hotel & Casino – 3355 Las Vegas Blvd");
+        eventList.add(events[6]);
+
+        events[7] = new Event();
+        events[7].setName("Miss Asian Las Vegas Preliminary Pageant");
+        events[7].setMonth("August, 2015");
+        events[7].setDate("Friday August 28");
+        events[7].setLocation("The Venetian Theatre-The Venetian Hotel & Casino – 3355 Las Vegas Blvd");
+        eventList.add(events[7]);
+
+        events[8] = new Event();
+        events[8].setName("Miss Asian Las Vegas Pageant Finale");
+        events[8].setMonth("August, 2015");
+        events[8].setDate("Saturday August 29");
+        events[8].setLocation("The Venetian Theatre-The Venetian Hotel & Casino – 3355 Las Vegas Blvd");
+        eventList.add(events[8]);
+
+        return eventList;
     }
 }
