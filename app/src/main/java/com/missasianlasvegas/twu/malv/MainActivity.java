@@ -47,7 +47,7 @@ public class MainActivity extends FragmentActivity implements OnItemClickListene
         fManager = getSupportFragmentManager();
         FragmentTransaction fTransaction  = fManager.beginTransaction();
 
-        MainActivityFragment fragmentHome = new MainActivityFragment();
+        HomeFragment fragmentHome = new HomeFragment();
         fTransaction.add(R.id.mainContent, fragmentHome);
         fTransaction.commit();
     }
@@ -97,7 +97,25 @@ public class MainActivity extends FragmentActivity implements OnItemClickListene
         Fragment newFragment = null;
         switch (position) {
             case 0:
-                newFragment = new MainActivityFragment();
+                newFragment = new HomeFragment();
+                break;
+            case 1:
+                newFragment = new EventFragment();
+                break;
+            case 2:
+                newFragment = new ContestantsFragment();
+                break;
+            case 3:
+                newFragment = new ApplyFragment();
+                break;
+            case 4:
+                newFragment = new SponsorsFragment();
+                break;
+            case 5:
+                newFragment = new AboutFragment();
+                break;
+            case 6:
+                newFragment = new ContactFragment();
                 break;
             default:
                 break;

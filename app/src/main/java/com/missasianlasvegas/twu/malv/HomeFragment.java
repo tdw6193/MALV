@@ -22,7 +22,7 @@ import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment  {
+public class HomeFragment extends Fragment  {
 
     private Context context;
 
@@ -34,13 +34,13 @@ public class MainActivityFragment extends Fragment  {
     private ImageButton programbookButton;
     private ImageButton facebookBtn, twitterBtn, instagramBtn, youtubeBtn;
 
-    public MainActivityFragment() {
+    public HomeFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_main, container, false);
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         context = inflater.getContext();
 
@@ -86,12 +86,12 @@ public class MainActivityFragment extends Fragment  {
         });
 
         YouTubePlayerSupportFragment youTubePlayerFragment = YouTubePlayerSupportFragment.newInstance();
-        youTubePlayerFragment.initialize(Config.YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
+        youTubePlayerFragment.initialize(YouTubeConfig.YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean wasRestored) {
                 if (!wasRestored) {
                     player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
-                    player.cueVideo("nrk2HjcuEhA");
+                    player.cueVideo(YouTubeConfig.YOUTUBE_URL);
                     player.pause();
                 }
             }

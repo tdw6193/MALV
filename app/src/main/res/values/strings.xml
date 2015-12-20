@@ -7,7 +7,7 @@
 
     <string-array name="menu">
         <item>Home</item>
-        <item>Events</item>
+        <item>Event</item>
         <item>Contestants</item>
         <item>Apply</item>
         <item>Sponsors</item>

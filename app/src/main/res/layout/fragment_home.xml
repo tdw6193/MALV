@@ -2,9 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.missasianlasvegas.twu.malv.MainActivityFragment"
-    tools:showIn="@layout/activity_main"
-    android:background="@mipmap/content_bg" >
+    tools:context=".HomeFragment"
+    tools:showIn="@layout/activity_main">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,10 +20,10 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/menu_logo"
+                android:id="@+id/homepage_logo"
                 android:background="@mipmap/missasianlasvegas_logo"
                 android:layout_marginTop="3dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="15dp"
                 android:layout_gravity="center_horizontal"/>
 
             <RelativeLayout
