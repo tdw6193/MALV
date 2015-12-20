@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.missasianlasvegas.twu.malv.MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:background="@mipmap/malv_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:orientation="vertical"
+            android:id="@+id/homepage_content"
+            android:background="@mipmap/content_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/home_slideshow"
+                android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/slideshow_prev"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:background="@mipmap/prev_btn"/>
+
+                <ImageSwitcher
+                    android:id="@+id/slideshow_imageswitcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="3dp" />
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/slideshow_next"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:background="@mipmap/next_btn"/>
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:id="@+id/programbook_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@mipmap/pagent_cover"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.missasianlasvegas.twu.malv.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"    >
+    </FrameLayout>
+    <ListView
+        android:id="@+id/drawerList"
+        android:background="#81BEF7"
+        android:layout_width="200dp"
+        android:divider="@null"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        >
+    </ListView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+<!--
+<ImageButton
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/menu_logo"
+android:background="@mipmap/missasianlasvegas_logo"
+android:layout_margin="3dp"
+android:layout_gravity="center_horizontal"/>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:id="@+id/home_menubar"
+android:orientation="horizontal"
+android:weightSum="5">
+
+<Button
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/menu_homeBtn"
+    android:layout_margin="1dp"
+    android:text="HOME"
+    android:textColor="#ffffffff"
+    android:background="#00ffffff"/>
+
+
+<Button
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:id="@+id/menu_contestantsBtn"
+    android:layout_margin="1dp"
+    android:text="CONTESTANTS"
+    android:textColor="#ffffffff"
+    android:background="#00ffffff" />
+
+
+<Button
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/menu_aboutBtn"
+    android:layout_margin="1dp"
+    android:text="ABOUT"
+    android:textColor="#ffffffff"
+    android:background="#00ffffff" />
+
+<Button
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/menu_contactBtn"
+    android:layout_margin="1dp"
+    android:text="CONTACT"
+    android:textColor="#ffffffff"
+    android:background="#00ffffff" />
+
+</LinearLayout>
+-->
