@@ -24,6 +24,104 @@
                 android:layout_marginBottom="15dp"
                 android:layout_gravity="center_horizontal"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="RULES AND REGULATIONS:"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="(updated November 11, 2015)\n\nThank you for your interest in the Miss Asian and Miss Teen Asian Las Vegas Pageant.\nHere are the qualifications to enter the Miss Asian and Miss Teen Asian Las Vegas Pageant held in the Summer of 2016."
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="TEEN:"
+                android:textColor="@color/pink"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="* Between the ages of 15-18 years old\n* Must reside in NEVADA\n* Must be at least 1/4 Asian Descent\n* Be a Full Time Student in Good Academic Standing. (High School or College Transcripts may be requested)"
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="MISS:"
+                android:textColor="@color/pink"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="* Between the ages of 19-26 years old\n* Must reside in U.S. or CANADA\n* Must be at least 1/4 Asian Descent\n* Must Never be Married or have children"
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="2016 MISS ASIAN LAS VEGAS PAGEANT REGISTRATION FEE"
+                android:textColor="@color/pink"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="APPLICATION FEE:\n  Non-refundable $50.00\n\nREGISTRATION FEE:\n  $600 MISS  $400 TEEN"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="There are a lot of costs involved to produce a pageant. Your Registration fee will enroll you as an Official 2016 Miss Asian or Teen Asian Delegate. The Registration Fee will include your portion of production costs including choreographer, training, rehearsals production crew costs, and rental fees. In addition, you will also receive a pageant sash, MALV shirt, light food during rehearsals, and competition swimwear and Sarong by Sanya Swimwear.\n\nAs a 2016 MISS Division delegate, you are required to find a minimum of a quarter page Program book sponsor at $450.00.\n\nTEEN delegates are required to have parental consent to participate in ALL activities.\n\nFor more information and details on requirements and qualifications, you may email info@missasianlasvegas.com."
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/apply_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@mipmap/applynow_button"/>
+
         </LinearLayout>
 
     </ScrollView>
