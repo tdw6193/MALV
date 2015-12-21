@@ -6,8 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -21,9 +25,12 @@ public class EventFragment extends Fragment {
 
     private Context context;
 
+    private Button event_info_btn, emcee_btn, performers_btn, judges_btn;
+
     private ExpandableListView listView;
     private EventsExpandableListViewAdapter adapter;
-
+    private LinearLayout bhoolswan_section, chan_section;
+    private TextView performers_text_sction, judges_text_sction;
 
     public EventFragment() {
     }
@@ -37,17 +44,51 @@ public class EventFragment extends Fragment {
         context = inflater.getContext();
 
         ArrayList<Event> events = generateDummyData();
-        for(int i=0; i<events.size(); i++)
-            Toast.makeText(context, events.get(i).getName(), Toast.LENGTH_SHORT).show();
 
         listView = (ExpandableListView) v.findViewById(R.id.events_listview);
-
         if(!events.isEmpty()) {
             adapter = new EventsExpandableListViewAdapter(context, events);
             listView.setAdapter(adapter);
             for (int i = 0; i < adapter.getGroupCount(); i++)
                 listView.expandGroup(i);
         }
+
+        bhoolswan_section = (LinearLayout) v.findViewById(R.id.bhoolswan_section);
+        chan_section = (LinearLayout) v.findViewById(R.id.chan_section);
+        performers_text_sction = (TextView) v.findViewById(R.id.performers_text_sction);
+        judges_text_sction = (TextView) v.findViewById(R.id.judges_text_sction);
+
+        event_info_btn = (Button) v.findViewById(R.id.event_info_btn);
+        emcee_btn = (Button) v.findViewById(R.id.emcee_btn);
+        performers_btn = (Button) v.findViewById(R.id.performers_btn);
+        judges_btn = (Button) v.findViewById(R.id.judges_btn);
+
+        setToEventInfo();
+
+        event_info_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setToEventInfo();
+            }
+        });
+        emcee_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setToEMCEE();
+            }
+        });
+        performers_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setToPerformers();
+            }
+        });
+        judges_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setToJudges();
+            }
+        });
 
         return v;
     }
@@ -121,5 +162,57 @@ public class EventFragment extends Fragment {
         eventList.add(events[8]);
 
         return eventList;
+    }
+
+    private void setToEventInfo(){
+        event_info_btn.setTextColor(getResources().getColor(R.color.white));
+        emcee_btn.setTextColor(getResources().getColor(R.color.grey));
+        performers_btn.setTextColor(getResources().getColor(R.color.grey));
+        judges_btn.setTextColor(getResources().getColor(R.color.grey));
+
+        listView.setVisibility(View.VISIBLE);
+        bhoolswan_section.setVisibility(View.GONE);
+        chan_section.setVisibility(View.GONE);
+        performers_text_sction.setVisibility(View.GONE);
+        judges_text_sction.setVisibility(View.GONE);
+    }
+
+    private void setToEMCEE(){
+        event_info_btn.setTextColor(getResources().getColor(R.color.grey));
+        emcee_btn.setTextColor(getResources().getColor(R.color.white));
+        performers_btn.setTextColor(getResources().getColor(R.color.grey));
+        judges_btn.setTextColor(getResources().getColor(R.color.grey));
+
+        listView.setVisibility(View.GONE);
+        bhoolswan_section.setVisibility(View.VISIBLE);
+        chan_section.setVisibility(View.VISIBLE);
+        performers_text_sction.setVisibility(View.GONE);
+        judges_text_sction.setVisibility(View.GONE);
+    }
+
+    private void setToPerformers(){
+        event_info_btn.setTextColor(getResources().getColor(R.color.grey));
+        emcee_btn.setTextColor(getResources().getColor(R.color.grey));
+        performers_btn.setTextColor(getResources().getColor(R.color.white));
+        judges_btn.setTextColor(getResources().getColor(R.color.grey));
+
+        listView.setVisibility(View.GONE);
+        bhoolswan_section.setVisibility(View.GONE);
+        chan_section.setVisibility(View.GONE);
+        performers_text_sction.setVisibility(View.VISIBLE);
+        judges_text_sction.setVisibility(View.GONE);
+    }
+
+    private void setToJudges(){
+        event_info_btn.setTextColor(getResources().getColor(R.color.grey));
+        emcee_btn.setTextColor(getResources().getColor(R.color.grey));
+        performers_btn.setTextColor(getResources().getColor(R.color.grey));
+        judges_btn.setTextColor(getResources().getColor(R.color.white));
+
+        listView.setVisibility(View.GONE);
+        bhoolswan_section.setVisibility(View.GONE);
+        chan_section.setVisibility(View.GONE);
+        performers_text_sction.setVisibility(View.GONE);
+        judges_text_sction.setVisibility(View.VISIBLE);
     }
 }

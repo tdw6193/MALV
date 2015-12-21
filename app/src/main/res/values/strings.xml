@@ -14,4 +14,15 @@
         <item>About</item>
         <item>Contact</item>
     </string-array>
+
+    <string name="Bhoolsuwan_desc">
+        Patranya is a 3 time Emmy Award winning news anchor and reporter with KLAS-TV, the CBS affiliate in Las Vegas.\n\n
+        Since arriving in Nevada 4 years ago, she has become one of the most visible media personalities in Las Vegas. She currently anchors the popular weekend morning news show on KLAS-TV and serves as a general assignment reporter during the week covering a variety of issues from local politics to education. Her recent news series “School Bullying Revelations” earned her the 2015 Pacific Southwest Emmy Award.\n\n
+        Patranya began her career as a writer and producer for the NBC affiliate news station in San Francisco, California. She graduated with honors from the University of San Francisco with a degree in Communications and Political Science. Patranya has a passion for mentoring young journalists and has been an active member for the Asian American Journalism Association since 1998. Patranya was born in Bangkok, Thailand, and still travels there often to visit family and friends.
+    </string>
+
+    <string name="Chan_desc">
+        His career as a professional entertainer has spanned over 16 years, covering reality television as a start of ABC’s Making the Band, lead singer of Atlantic Records Boy Band LMNT, and headliner for the Las Vegas and International Tour of Chippendale. A prolific leader in the community his voice and presence have played a role in every major LGBT organization, from AFAN’s AIDS Walk, the Black and White Party, Golden Rainbow, NoH8, the Gay and Lesbian Center, and Southern Nevada’s Pride Parade. Chan, a full time public speaker and real estate agent, has etched his mark into the community as a respected local media personality. A role he says he enjoys the most, right behind being a dad.
+    </string>
+
 </resources>

@@ -2,12 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+<!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true">
-
+-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -31,6 +31,182 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@mipmap/event_venentian"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_button_group"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_info_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="EVENT INFO"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emcee_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="EMCEE"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/performers_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="PERFORMERS"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/judges_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="JUDGES"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/events_listview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/bhoolswan_section"
+                android:weightSum="4"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/emcee_bhoolsuwan"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Patranya Bhoolsuwan"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="@string/Bhoolsuwan_desc"
+                            android:textColor="@color/grey"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chan_section"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/emcee_chan"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Bryan Chan"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="@string/Chan_desc"
+                            android:textColor="@color/grey"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/performers_text_sction"
+                android:layout_margin="10dp"
+                android:text="For interest in being a cultural performer on our show, please submit an email to info@missasianlasvegas.com."
+                android:textColor="@color/grey"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/judges_text_sction"
+                android:layout_margin="10dp"
+                android:text="For those interested in being a judge for our pageant, please fill out the attached request form (coming soon)."
+                android:textColor="@color/grey"
+                android:visibility="gone"/>
+<!--
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,10 +234,70 @@
                 </ExpandableListView>
 
             </RelativeLayout>
+            -->
+<!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emcee_section"
+                android:padding="15dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emcee_text"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="left"
+                    android:text="EMCEE"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_below="@+id/emcee_text">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@mipmap/emcee_bhoolsuwan"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Patranya Bhoolsuwan"
+                                android:textColor="@color/white"
+                                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="@string/Bhoolsuwan_desc"
+                                android:textColor="@color/grey"
+                                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+-->
 
         </LinearLayout>
-
+<!--
     </ScrollView>
-
+-->
 </RelativeLayout>
