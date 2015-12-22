@@ -24,6 +24,631 @@
                 android:layout_marginBottom="15dp"
                 android:layout_gravity="center_horizontal"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:text="Interested in sponsoring the 2015 Miss Asian Las Vegas or 2016 Ms./Mrs. Asian Las Vegas pagent?"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sponsor_request_btn"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Sponsor\nReqest"
+                    android:textColor="@color/pink"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/programbook_sponsor_btn"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="2015 Programbook\nSponsorship"
+                    android:textColor="@color/pink"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_sponsor_btn"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Event\nSponsorship"
+                    android:textColor="@color/pink"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/sponsor_img"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sponsors_btn"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:text="2015 SPONSORS"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/media_partners_btn"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:text="MEDIA PARTNERS"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:background="#00ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/sponsors_section"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/venetian_logo"
+                    android:background="@mipmap/venetian_logo"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/ysl_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/mpm_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/azure_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/ekada_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/hkstar_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/aloha_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/bayerrealty_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/kap_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/lovenails_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/missjoy_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/mochiko_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/sashstore_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/v7_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/tyku_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/tpc_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/southernwines_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/chen_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/summerlinwealth_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/blvdtrophy_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/bodyworks_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/chocolatier_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/fionachan_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/injurylawfirm_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/nvcpc_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/passportexpress_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/regisgalerie_logo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/media_partners_section"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/lvwoman_btn"
+                    android:background="@mipmap/lvwoman_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/lvcnn_btn"
+                    android:background="@mipmap/lvcnn_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/wendoh_btn"
+                    android:background="@mipmap/wendoh_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/thainews_btn"
+                    android:background="@mipmap/thainews_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/asianjornal_btn"
+                    android:background="@mipmap/asianjournal_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/v7_btn"
+                    android:background="@mipmap/v7_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ch8_btn"
+                    android:background="@mipmap/ch8_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/examiner_btn"
+                    android:background="@mipmap/examiner_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/lvsun_btn"
+                    android:background="@mipmap/lvsun_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/lvweekly_btn"
+                    android:background="@mipmap/lvweekly_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/spyonvegas_btn"
+                    android:background="@mipmap/spyonvegas_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/vegasnews_btn"
+                    android:background="@mipmap/vegasnews_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/zimbio_btn"
+                    android:background="@mipmap/zimbio_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/lvcdn_btn"
+                    android:background="@mipmap/lvcdn_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/wj_btn"
+                    android:background="@mipmap/wj_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ptimes_btn"
+                    android:background="@mipmap/ptimes_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ch13_btn"
+                    android:background="@mipmap/ch13_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/valleyview_btn"
+                    android:background="@mipmap/valleyview_logo"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
         </LinearLayout>
 
     </ScrollView>
