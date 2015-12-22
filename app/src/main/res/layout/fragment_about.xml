@@ -24,6 +24,832 @@
                 android:layout_marginBottom="15dp"
                 android:layout_gravity="center_horizontal"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/about_us_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ABOUT US"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/exclusive_producer_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="EXCLUSIVE\nPRODUCER"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/press_releases_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="PRESS\nRELEASES"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/programbook_archieve_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="PROGRAM BOOK\nARCHIEVE"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/q_and_a_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Q &amp; A"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/legacy_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="LEGACY"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="#00ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/about_us_section"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="left"
+                    android:text="OUR MISSION"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="left"
+                    android:text="@string/our_mission"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="left"
+                    android:text="OUR STORY"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="left"
+                    android:text="@string/our_story"
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/exclusive_producer_section"
+                android:layout_marginTop="30dp"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_gravity="left"
+                        android:text="Annie Chang"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_gravity="left"
+                        android:text="President &amp; Executive Producer"
+                        android:textColor="@color/grey"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_gravity="left"
+                            android:text="@string/exclusive_producer_desc"
+                            android:textColor="@color/grey"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/annie"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/press_releases_section"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release092814_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="September 28, 2014 – Event Recap: 2014 Miss Asian Las Vegas Pageant at The Palazzo(R) Las Vegas on Sunday, Sept. 28"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release091714_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="September 17, 2014 – Miss Asian Las Vegas Pageant Reveals Impressive Host and Judge Lineup for Pageant at Palazzo Las Vegas on Sunday, Sept. 28"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release090214_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="September 2, 2014 – Miss Asian Las Vegas Pageant Reveals Entertainment Lineup for Event at the Palazzo Las Vegas on Sunday, Sept. 28"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release082514_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="August 25, 2014 – Miss Asian Las Vegas Unveils Teen, Miss, Ms. and Mrs. Delegates Participating in Pageant at the Palazzo Las Vegas on Sunday, Sept. 28"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release073014_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="July 30, 2014 – Delegates Gear Up for Second Annual Miss Asian Las Vegas Pageant with Workshop, Meet &amp; Greet Party and Photo Shoot, Aug. 9 – 11"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release071414_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="July 14, 2014 – Tickets for Second Annual Miss Asian Las Vegas Pageant at the Palazzo® Las Vegas On Sale Friday, Aug. 8"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release051714_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="May 17, 2014 – Las Vegas’s Fast Growing Asian Pageant Hosts 2nd Annual Launch Party"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release101313_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="October 13, 2013 – Catherine Ho Crowned Miss Asian Las Vegas at Inaugural Pageant"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release100313_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="October 3, 2013 – Media Alert – Inaugural Miss Asian Las Vegas Pageant Celebrates Beauty, Talent and Rich Ethnic Diversity at The New Tropicana Las Vegas Saturday, October 12"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:id="@+id/press_release091913_btn"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="September 19, 2013 – Hector Bustamante &amp; Patranya Bhoolsuwan announced as Co-emcees of the Inaugural Miss Asian Las Vegas Pageant – October 12, 2013"
+                    android:textColor="@color/grey"
+                    android:textSize="9dp"
+                    android:background="#00ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/programbook_archieve_section"
+                android:layout_marginTop="30dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="left"
+                    android:text="Past program books of the Miss Asian Las Vegas pageant."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="3"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/programbook2013_btn"
+                            android:background="@mipmap/programbook2013" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center_horizontal"
+                            android:text="2013\nProgram Book"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/programbook2014_btn"
+                            android:background="@mipmap/programbook2014" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center_horizontal"
+                            android:text="2014\nProgram Book"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/programbook2015_btn"
+                            android:background="@mipmap/programbook2015" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center_horizontal"
+                            android:text="2015\nProgram Book"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/q_and_a_section"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="Who is Eligible to compete in the 2015 Miss Asian Las Vegas Pageant?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Ages 15 – 26, Nevada Resident, Single, Never been Married or Pregnant."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="Are there any height or weight requirements?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="There are no required height, weight or measurements that qualify you to compete. As long as you are proportionally fit you are qualified."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="How many contestants will be in the pageant?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="The number of contestants changes daily as new contestants apply and choose to participate of it a contestant drop out due to unforeseen circumstances. We will not know the final number of participants until the registration process is completed on the first day of pageant weekend."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="What happens after I submit my photo &amp; information?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="We review all entries received and submit selected entries to a member of our staff who will contact the applicants for a brief telephone interview. After your phone interview, a review committee will consider your application. They will determine if they feel you would make a good candidate for the title. If you are accepted to participate in the pageant, you will receive the registration materials via U.S. Mail or by email."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="What are the costs associated with the pageant?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="All delegate will pay a non-refundable application fee of $50.00 online to register your name with us.\n\nIn 2015, we have decided to provide 2 levels of registration packages because every delegate is different. Some need no help at all and then there are those that need a LOT of help."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="NEW 2015 Pageant Registration Fee Schedule"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="OPTION 1: Basic: $500 – (Price goes up to $650 on June 7, 2015) Deadline is August 1, 2015."
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Enrolls you as an official Delegate. We provide you with a Pageant sash, (1) orientation, (1) MALV shirt, 3 days of choreography training and events during the week of the Pageant, sponsored competition swimwear by Sanya Swimwear, Photo placement on Official 2015 MALV Poster and Program Books, and administrative &amp; processing fees. (Great for those that don’t have much time for training &amp; workshops and just want to hit the stage during pageant week."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Option 2: Combo: $800 – (Price goes up to $1,000 on June 7, 2015). Deadline is June 30, 2015."
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Pays for all Basic Entry, plus: (1) Group Swimwear &amp; Evening Gown Runway Workshop, 1 Pre-pageant Choreography Workshop, 3 month Gym Membership to City Athletic Club for the Summer, (1) MALV Open Gym Runway Practice, Access to a Half Day Women’s Leadership Seminar ($200 value), (1) Additional MALV Tank Top, (1) MALV Tote Bag, (1) MALV Water Bottle, &amp; (1) MALV Sunglasses, Sponsor Discounts including Tanning Partners, Nail Salons, and more, and a (1) year enrollment in the Miss Asian Las Vegas Monthly Motivational Workshop. (Great for those that need Pre Pageant Workshops and have no experience with Pageants)Disclaimer: Purchasing a higher package does not guarantee or increase your chance of winning the pageant.\n\nDisclaimer: Purchasing a higher package does not guarantee or increase your chance of winning the pageant."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="What are the sponsorship requirements?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="In 2015, there will be no Sponsorship requirements however, if you sell the most ads, you have the opportunity to win Miss Modern Asia with its own gift and prizes that is separate from the overall Miss Asian Las Vegas Queen Title."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="Where can I get sponsors?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Sponsors can include, but are not limited to your family, friends, local businesses, fraternal organizations and clubs, schools, etc. You may secure sponsors from anywhere in or out of the state. You can also start a fundraising account on a fundraising site to help you find sponsors. Sponsorship can also help defray costs for entry fee, wardrobe, etc."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="Will the pageant provide my wardrobe?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="No. Each contestant is responsible for bringing her own wardrobe to pageant weekend. This allows you the versatility and freedom to pick a wardrobe that best flatters your body as well as to choose a wardrobe that fits and highlights your individual personality. You will however receive some Miss Asian Las Vegas shirts to wear during your stay for the pageant."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="What are the judging criteria for the pageant?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Preliminary Swimwear"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Prior to the pageant final, our preliminary judges will look for the delegates physical fitness and poise."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Preliminary Evening Gown w/Q &amp; A"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Prior to the pageant finale, our preliminary judges will look for delegates stage presence and poise. In addition, will ask a specific question that is personalized to each delegate."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Ethnic Costume"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Best introduction and presence during the opening number in contestants ethnic costume of choice."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Swimsuit"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="The judges will be basing their decisions on over all physical fitness and the poise with which you carry yourself during this competition."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Evening Gown"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Judges focus on stage presence, elegance, poise, overall appearance, and sense of fashion and style. No single detail of the gown, hair or make-up should garner attention. The overall effect should be a reflection of your personal style. You will need one evening gown. Choose your BEST color, a style that looks great on you and will show well on stage."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Q &amp; A"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Question from One of the Judges for the Top 5 Finalists."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="What awards are there in the 2015 Miss Asian Las Vegas Pageant?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="The Queen will be named Miss Asian Las Vegas. In addition, there will be an Honorary Award of Miss Teen Asian Las Vegas for the highest scoring delegates ages 15-18 years of age.\n\nAs for other honorary awards, we will announce a Miss Congeniality, Miss Talent, and a Miss People’s Choice."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="Are tattoos or body piercings allowed?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Tattoos and piercing are a statement of your individuality, and it is up to you whether you choose to show them. If either are visible while in your competition wardrobe, you may remove your body jewelry or cover tattoos with body make-up if you desire. Judges are not told to look upon someone negatively because of tattoos or piercing, but judging is a subjective process done by each individual differently."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="left"
+                    android:text="What happens if I should win?"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="Time involved should you win depends on the individual person. There are certain responsibilities that accompany the privilege of becoming a titleholder. The biggest commitment is your responsibility to represent our city in the Miss Asian North America Pageant in 2015 which will be sponsored by the Miss Asian Las Vegas Organization. Your travel expenses during this competition are included in your prize package. In addition to preparing and competing in the national pageant, we make every effort to obtain appearances for titleholders locally and throughout the state."
+                    android:textColor="@color/grey"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/legacy_text"
+                android:layout_marginBottom="3dp"
+                android:gravity="left"
+                android:text="UNDER CONSTRUCTION"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone"/>
+
         </LinearLayout>
 
     </ScrollView>
