@@ -24,6 +24,196 @@
                 android:layout_marginBottom="15dp"
                 android:layout_gravity="center_horizontal"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contestants_text"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="left"
+                android:text="CONTACT"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/malv_contact_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="Miss Asian Las Vegas"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/malv_contact_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="1930 Village Center Circle, Suite 3-160\nLas Vegas, NV 89134\ninfo@missasianlasvegas.com\n(702) 582-9191"
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/media_contact_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="Media Contact"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/media_contact_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="If you are from the Media, please contact KIRVIN DOAK through Laura Bucklin (lbucklin@kirvindoak.com) or Lindsey Rathjen (lrathjen@kirvindoak.com).\n\n5230 W. Patrick Lane\nLas Vegas, NEvada 89118\n(702) 737-3100"
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sponsor_contact_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="Sponsors Contact"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sponsor_contact_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="To become an Official Sponsor of the Miss Asian Las Vegas Pageant, please contact us at sponsors@missasianlasvegas.com."
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/request_malv_appearance_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="Request Miss Asian Las Vegas Pageant Appearance"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/request_malv_appearance_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="To request Miss Asian Las Vegas or the delegates for an appearance, email us at info@missasianlasvegas.com"
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/host_an_event_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="Host an Event"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/host_an_event_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="To host an event for the Miss Asian Las Vegas delegates, priority goes to our top sponsors however we are open to consider other events. Please contact us for more information at info@missasianlasvegas.com."
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advertise_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="Advertise"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advertise_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="To advertise with Miss Asian Las Vegas, please contact us at ads@missasianlasvegas.com."
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/general_inquiry_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="General Inquiry"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/general_inquiry_info"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"
+                android:text="For any other inquiry, contact us with the contact form to the right or call the Miss Asian Las Vegas Pageant Organization at (702) 582-9191."
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/contact_us_btn"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/contactus_button"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/mailing_list_btn"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/mailinglist_button"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
